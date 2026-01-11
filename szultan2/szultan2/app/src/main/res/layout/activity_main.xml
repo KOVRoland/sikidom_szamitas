@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#35654d"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:text="Szultán"
+        android:textSize="32sp"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:id="@+id/dice1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="Dobókocka 1"
+            android:src="@drawable/dice_1"
+            android:layout_marginEnd="8dp"/>
+
+        <ImageView
+            android:id="@+id/dice2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="Dobókocka 2"
+            android:src="@drawable/dice_1"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/commandInput"
+        android:hint="Add meg a parancsot (2-12, nem 7)"
+        android:textColor="#000000"
+        android:background="#FFFFFF"
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/rollButton"
+        android:text="Dobás"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#800000"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/restartButton"
+        android:text="Újrakezdés"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#800000"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/infoText"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        />
+
+</LinearLayout>
